@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .register-btn {
+            padding: 10px 20px;
+            background-color: #FF5733;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .register-btn:hover {
+            background-color: #C70039;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(to right, #e8f5e9, #ffffff);
+            min-height: 90vh;
+        }
+
+        .hero-content {
+            max-width: 50%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content h1 {
+            font-size: 54px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: #2c3e50;
+        }
+
+        .hero-content h1 span {
+            color: #4CAF50;
+        }
+
+        .hero-content p {
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .search-box {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .search-box input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        .search-box button:hover {
+            background-color: #45a049;
+        }
+
+        .hero-images {
+            position: relative;
+            max-width: 40%;
+        }
+
+        .hero-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: rotate(-5deg);
+        }
+
+        .highlight-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+        }
+
+        .highlight-box li {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Learning</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Courses</a>
+            <a href="#">Blog</a>
+        </nav>
+        <button class="register-btn">Register</button>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Best Learning <br><span>Education Platform</span> <br>in The World</h1>
+            <p>Unlock your full learning potential with our intuitive education platform. Seamlessly blending technology and education, we provide an immersive learning environment that combines interactive lessons, virtual classrooms, and intelligent feedback.</p>
+            <div class="search-box">
+                <input type="text" placeholder="What do you want to learn">
+                <button>Search Course</button>
+            </div>
+        </div>
+        <div class="hero-images">
+            <img src="man.jpg" alt="Student 1">
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Education Platform. Designed with ❤ by <a href="#">Your Company</a>.</p>
+    </footer>
+</body>
+</html>
